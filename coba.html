@@ -19,37 +19,45 @@
       body {
         min-height: 3000px;
       }
+
       .container {
-  position: relative;
-  
-  color: white;
-}
+        position: relative;
 
-.container,.container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    max-width: 1920px;
-}
+        color: white;
+      }
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+      .container,
+      .container-lg,
+      .container-md,
+      .container-sm,
+      .container-xl,
+      .container-xxl {
+        max-width: 1920px;
+      }
+
+      .judul {
+        position: absolute;
+        top: 45%;
+        left: 18%;
+        transform: translate(-50%, -50%);
+        text-shadow: 3px 2px 1px rgb(10, 10, 10);
+        font-size: 20px;
+      }
 
       ::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 5px;
-  height: 5px;
-}
+        -webkit-appearance: none;
+        width: 10px;
+        height: 5px;
+      }
 
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
+      ::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
 
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #44A08D, #093637);
-  border-radius: 10px;
-}
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom, #44a08d, #093637);
+        border-radius: 10px;
+      }
 
       .video-wrap {
         /*z-index: -100;*/
@@ -105,7 +113,6 @@
               </div>
               <div class="col text-center">
                 <a class="navbar-brand text-center sm" href="#"><img src="logo/full150.png" alt="" /></a>
-                
               </div>
               <div class="col text-end">
                 <div class="d-none d-lg-block">
@@ -116,33 +123,32 @@
           </div>
         </div>
       </nav>
-      
+
       <!-- Akhir NavBar -->
 
-      <div class="container">
-  <!-- <img src="img_snow_wide.jpg" alt="Snow" style="width:100%;"> -->
-  <video autoplay muted loop id="myVideo" style="width: 100%;">
-    <source src="trailer-cod.mp4" type="video/mp4" style="width: 100%;">
-    Your browser does not support HTML5 video.
-  </video>
-  <!-- <div class="bottom-left">Bottom Left</div>
+      <div class="container" style="padding: 0%;">
+        <!-- <img src="img_snow_wide.jpg" alt="Snow" style="width:100%;"> -->
+        <video autoplay muted loop id="myVideo" style="width: 100%">
+          <source src="Video/contoh.mp4" type="video/mp4" style="width: 100%" />
+          Your browser does not support HTML5 video.
+        </video>
+        <!-- <div class="bottom-left">Bottom Left</div>
   <div class="top-left">Top Left</div>
   <div class="top-right">Top Right</div>
   <div class="bottom-right">Bottom Right</div> -->
-  <div class="centered">
-    <h2>Builder Hut</h2>
-  </div>
-</div>
+        <div class="judul">
+          <h1>KULI-COOLLY</h1>
+          <p>Solusi Jasa Perbaikan Bangunan, Pembuatan Bangunan, <br> dan Mandor</p>
+          <div class=" my-3 d-flex flex-wrap align-items-center">
+            <div class="d-flex flex-wrap align-items-center">
+              <h4 class="text-white mb-0 me-3">4.8/5</h4>
+            </div>
+          <button type="button" class="custom-btn btn btn-primary">Pesan Sekarang</button>
+        </div>
+      </div>
 
       <!-- Awal Carousel -->
 
-      <div class="video-wrap bg-center" style="position: fixed;">
-        <video autoplay="" loop="" muted="" class="custom-video" poster="">
-          <source src="trailer-cod.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-          <h3>aria</h3>
-        </video>
-      </div>
 
       <!-- Akhir Carousel -->
 
@@ -152,7 +158,7 @@
         <div class="modal-dialog modal-dialog-centered modal-xl">
           <div class="modal-content">
             <div class="modal-header">
-              <h3 class="mb-0">Silahkan Login</h3>
+              <h3 class="">Silahkan Login</h3>
 
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>

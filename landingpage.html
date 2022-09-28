@@ -20,13 +20,40 @@
         min-height: 3000px;
       }
 
+      .container {
+        position: relative;
+
+      }
+
+      .container,
+      .container-lg,
+      .container-md,
+      .container-sm,
+      .container-xl,
+      .container-xxl {
+        max-width: 1920px;
+      }
+
+      .judul {
+        position: absolute;
+        top: 30%;
+        left: 18%;
+        transform: translate(-50%, -50%);
+        text-shadow: 3px 2px 1px rgb(10, 10, 10);
+        font-size: 20px;
+      }
+
+      .isi {
+        padding: 20px 80px 0px 80px;
+      }
+
       ::-webkit-scrollbar {
         -webkit-appearance: none;
-        width: 5px;
+        width: 10px;
         height: 5px;
       }
 
-      webkit-scroll::-bar-track {
+      ::-webkit-scrollbar-track {
         background-color: transparent;
       }
 
@@ -36,12 +63,12 @@
       }
 
       .video-wrap {
-        z-index: -100;
+        /*z-index: -100;*/
       }
 
       .custom-video {
         top: 0;
-        min-width: 100%;
+        /*min-width: 100%;*/
 
         object-fit: cover;
       }
@@ -101,18 +128,6 @@
       </nav>
 
       <!-- Akhir NavBar -->
-
-      <!-- Awal Carousel -->
-
-      <div class="video-wrap bg-center">
-        <video autoplay="" loop="" muted="" class="custom-video" poster="">
-          <source src="Video/contoh.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-          <h3>aria</h3>
-        </video>
-      </div>
-
-      <!-- Akhir Carousel -->
 
       <!-- Modal ............................................................................................ -->
 
@@ -214,19 +229,87 @@
       </div>
 
       <!-- Akhir Modal -->
+
+      <!-- Awal Video -->
+
+      <div class="container" style="padding: 0%; color: white;">
+        <!-- <img src="img_snow_wide.jpg" alt="Snow" style="width:100%;"> -->
+        <video autoplay muted loop id="myVideo" style="width: 100%">
+          <source src="Video/contoh.mp4" type="video/mp4" style="width: 100%" />
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="judul">
+          <h1>KULI-COOLLY</h1>
+          <p>Solusi Jasa Perbaikan Bangunan, Pembuatan Bangunan, <br> dan Mandor</p>
+          <div class=" my-3 d-flex flex-wrap align-items-center">
+            <div class="d-flex flex-wrap align-items-center">
+              <h4 class="text-white mb-0 me-3">4.8/5</h4>
+            </div>
+          <button type="button" class="custom-btn btn btn-primary">Pesan Sekarang</button>
+        </div>
+      </div>
+
+      <!-- Akhir Video -->
+
+      <!-- Awal Carousel -->
+
+      <div class="container isi">
+        <div class="row">
+          <div class="col-8">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="gallery/rumah1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="gallery/rumah2.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="row">
+              <img src="gallery/rumah11.jpg"  alt="">
+            </div>
+            <div class="row">
+              <img src="gallery/rumah22.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Akhir Carousel -->
+      <br>
+      <!-- Sub Judul -->
+
+      <div class="isi">
+          <h1 style="text-align: center ; color: black;">Apa itu Kuli-Coolly ?</h1>
+
+          <p id="penjelasan" style="color: black ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repellendus neque doloremque consequatur culpa aspernatur eos asperiores aliquam, maxime commodi eius pariatur molestias et! Mollitia soluta possimus sapiente numquam harum at error consectetur. Quae fuga neque ullam eos suscipit cumque ad magni, vero corporis repellendus incidunt illo sapiente ducimus officia atque consequatur voluptate perspiciatis beatae ea modi! Harum neque voluptatum excepturi nemo omnis nobis inventore deserunt, architecto hic dignissimos labore non? Temporibus, laborum quaerat? In porro ratione fugit recusandae nobis iusto explicabo officiis tempora, sunt soluta. Molestiae, natus aliquid? Ad in harum saepe delectus quam enim accusantium, animi culpa eos.</p>
+      </div>
+
+      <!-- Akhir Sub Judul -->
+
     </div>
+
+
 
     <!-- Akhir Div Pertama -->
 
-    <!-- Div Kedua -->
-
-    <div id="kedua"></div>
-
-    <!-- Akhir Div Kedua -->
+    
 
     <!-- Logika ...................................................................... -->
 
-    <script></script>
+    <script>
+    </script>
 
     <!-- Akhir Logika -->
 
